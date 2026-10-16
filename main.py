@@ -130,6 +130,11 @@ def NatrualSearch(points):
 # ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 # ┃   [CH] CHRISTOFIDES ALGORITHM ONLINE ┃
 # ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+
+# -----------------------------------
+# |            END CHRISTOFIDES      |
+# -------------------------------------
 num = input("Input an Int.")
 num = int(num)
 
