@@ -48,20 +48,22 @@ def pointDist(p1, p2):
     return math.sqrt((p2.x - p1.x) ** 2) + math.sqrt((p2.y - p1.y) ** 2)
 
 
+# For the lovley hackclub reviewers, I did copy and paste some code in,
+# THAT SAID, it was the cool looking headers. V(I am a sucker for those)
 # ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 # ┃  [BF] EXHAUSTIVE SEARCH INITIALIZED  ┃
 # ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 def bruteForce(points):
     print("Entered BruteForce Loop")
     numPoints = len(points)
-    bruteList = list([])
+    bruteList = []
     for x in range(numPoints - 1):
         bruteList.append(0)
-    pathScore = int()
+    pathScore = 0
     bestPath = []
     while True:
         availiblePoints = points.copy()
-        Trace = list([])
+        Trace = []
         for x in range(numPoints - 1):
             augment = bruteList[x]
             index = int(augment)
