@@ -43,8 +43,10 @@ def pointDist(p1, p2):
     return (math.sqrt((p2.x - p1.x)**2) + math.sqrt((p2.y-p1.y)**2))
 
 
+
+## I have no idea right now whether the loop is actually working, so We need to check that
 def bruteForce(points):
-    print("LOTS OF BALLS IN MY JAW")
+    print("Entered BruteForce Loop")
     numPoints = len(points)
     bruteList = list([])
     for x in range(numPoints - 1):
@@ -96,12 +98,21 @@ def increment(a, i=None):
 num = input("Input an Int.")
 num = int(num)
 
-points = randPoints(num)
-points = list(points)
-for x in range(num):
-    for z in range(num):
-        print(f"distance between point{x} and {z}: {point_dist(points[x], points[z])}")
+# points = randPoints(num)
+# points = list(points)
+# for x in range(num):
+#     for z in range(num):
+#         print(f"distance between point{x} and {z}: {point_dist(points[x], points[z])}")
+#
 
+points = [
+        point(0,0, 0), 
+        point(1,5,1), 
+        point(3,6,2), 
+        point(6, 5, 3),
+        point(7, 0, 4),
+        point(3.5,2.5,5)
+        ]
 
 Path = path(bruteForce(points))
 print(Path)
